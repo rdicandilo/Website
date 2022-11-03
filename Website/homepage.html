@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ryan's Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="10">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Ryan's Website</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="homepage.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="mywork.html">My Work</a></li>
+      <li><a href="contactme.html">Contact Me</a></li>
+    </ul>
+  </div>
+</nav>
+<hr/>
+<hr/>
+<h1>Ryan DiCandilo's Website Home Page</h1>
+<p id="demo"></p>
+<script>
+  const d = new Date();
+  document.getElementById("demo").innerHTML = d;
+  </script>
+<hr/>
+<img src="me.jpg" alt="Ryan DiCandilo" 
+    width="400"
+    height="400" />
+
+<p><br>This is a photo of Ryan DiCandilo</p>
+<hr/>
+<p><br>Welcome To my Home page, make yourself at home and feel free to explore all of the pages!</p>
+<p><br>This website contains information about myself, past and future work plans, and my contact information.</p>
+
+<button id="b" onclick="random();">What is Your Lucky Number?</button>
+<script>
+  function random(){
+    document.getElementById("number").innerHTML = Math.floor(Math.random() * 100);
+  }
+</script>
+<h2 id="number" style="color:white"></h2>
+</body>
+</html>

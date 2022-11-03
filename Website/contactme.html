@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Ryan's Website</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="homepage.html">Ryan's Website</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="mywork.html">My Work</a></li>
+      <li class="active"><a href="contactme.html">Contact Me</a></li>
+    </ul>
+  </div>
+</nav>
+<hr/>
+<hr/>
+<h1>Contact Me</h1>
+<hr/>
+<p>Please fill out this form if you would like to contact me.</p>
+<form method = "post" action =  "websitereciever.php">
+<input type = "hidden" name = "recipient" value = "rdicandilo">
+<input type = "hidden" name = "subject" value = "Contact form">
+<p><label>Anything you would like to say to me?:
+<input style="color: black" name = "feedback" type = "text" size = "25" maxlength = "30">
+</label></p>
+<p style="color: black">
+  <input type = "submit" value = "Submit">
+  <input type = "reset" value = "Clear">
+</p>
+</form>
+<p>
+  If you have any questions please contact me at: dicandir@kean.edu
+</p>
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+body {
+    background-color: navy; 
+}
+p{color: white;}
+h1{color: white;}
+li{color: white}
+
+.left, .right {
+    float: left;
+    width: 20%; 
+  }
+  
+  .main {
+    float: left;
+    width: 60%; 
+  }
+  
+  @media screen and (max-width: 800px) {
+    .left, .main, .right {
+      width: 100%; 
+    }
+  }
